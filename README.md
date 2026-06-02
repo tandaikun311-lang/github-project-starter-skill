@@ -13,7 +13,13 @@
 
 ## 一键安装
 
-把下面命令复制到终端运行：
+推荐把下面这条命令直接发给别人，对方复制到终端运行即可：
+
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/tandaikun311-lang/github-project-starter-skill/main/scripts/install.sh)"
+```
+
+如果对方电脑不能访问 `curl`，也可以用 `git clone`：
 
 ```bash
 git clone https://github.com/tandaikun311-lang/github-project-starter-skill.git ~/.codex/skills/github-project-starter
@@ -99,4 +105,3 @@ gh auth login
 ## 注意
 
 这个技能只负责创建项目结构、初始化 Git 和辅助推送 GitHub。它不会替你保存账号密码，不会绕过 GitHub 登录，也不会上传本地隐私文件。
-
